@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Interface</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="chat-container">
+    <!-- Message Header -->
+    <div class="message-header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Eo_circle_pink_letter-f.svg" alt="User Avatar" class="user-avatar">
+      <div class="user-details">
+        <h3 class="user-name">FSD Titan</h3>
+        <p class="last-seen" id="lastSeen">Last seen: Today at 3:00 PM</p>
+      </div>
+      <!-- Three-Dot Menu -->
+      <button class="menu-button" id="menuButton">⋮</button>
+      <ul class="menu-dropdown" id="menuDropdown">
+        <li>Message Info</li>
+        <li>Settings</li>
+        <li>About</li>
+      </ul>
+    </div>
+
+    <!-- Chat Box -->
+    <div class="chat-box">
+      <!-- Message Page -->
+      <div class="message-page" id="messagePage">
+        <!-- Messages will be dynamically appended here -->
+      </div>
+
+      <!-- Message Bottom -->
+      <div class="message-bottom">
+        <input type="text" id="messageInput" placeholder="Type a message..." aria-label="Message input">
+        <button id="sendButton" aria-label="Send message">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
